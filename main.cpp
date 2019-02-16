@@ -15,6 +15,13 @@ int main() {
 
     dayType day2(2);
     day2.print();
+    std::cout << "I time travel 14 days.\n"
+            << "Now it is "<< day2.timeTravel(14) << ".\n";
+    std::cout << "I time travel 4 days.\n"
+            << "Now it is "<< day2.timeTravel(4) << ".\n";
+    std::cout << "I time travel 13 days.\n"
+            << "Now it is "<< day2.timeTravel(13) << ".\n";
+
     // invalid input test
     dayType day30(30);
 

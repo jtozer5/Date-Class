@@ -47,6 +47,26 @@ std::string dayType::yesterday() {
     return mDay[n];
 }
 
-std::string timeTravel(int daysTravelled) {
+std::string dayType::timeTravel(int daysTravelled) {
+    int n;
 
+    if (daysTravelled < 0) {
+        std::cerr << "Invalid time travel parameter.  Please enter a"
+                    " number greater than 0.\n";
+
+    } else if (daysTravelled > 7) {
+
+        n = mDayNum + (daysTravelled % 7);
+
+    } else {
+
+        n = mDayNum + daysTravelled;
+    }
+
+    if (n > 7) {
+        n = n - 7;
+    }
+
+    mDayNum = n;
+    return mDay[mDayNum];
 }

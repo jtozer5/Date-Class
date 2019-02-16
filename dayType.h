@@ -11,8 +11,15 @@
 
 class dayType {
 private:
-     const std::string mDay[7] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
-                            "Friday", "Saturday"};
+     const std::string mDay[7] = {
+         "Sunday",
+         "Monday",
+         "Tuesday",
+         "Wednesday",
+         "Thursday",
+         "Friday",
+         "Saturday"
+     };
     int mDayNum;
 public:
     void setDayNum(int dayNum);
