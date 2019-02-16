@@ -1,3 +1,0 @@
-/tmp/ccsV82EZ.o: In function `main':
-/home/josh/class/chp-11-program/main.cpp:7: undefined reference to `dayType::print()'
-collect2: error: ld returned 1 exit status
