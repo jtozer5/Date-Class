@@ -1,5 +1,6 @@
 #include <iostream>
 #include "dayType.h"
+#include "dateType.h"
 
 int main() {
     // Testing the day class
@@ -25,5 +26,20 @@ int main() {
     // invalid input test
     dayType day30(30);
 
+    // Testing date class
+    dateType date(2, 20, 2017);
+    date.print();
+    date.setDate(10, 31, 2017);
+    date.print();
+    date.setDay(10);
+    date.print();
+    date.setMonth(12);
+    date.print();
+    date.setYear(2019);
+    date.testLeapYear();
+    date.setYear(2016);
+    date.testLeapYear();
+    date.setYear(2020);
+    date.testLeapYear();
     return 0;
 }
