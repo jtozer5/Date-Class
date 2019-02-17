@@ -19,15 +19,15 @@ void dayType::setDayNum(int dayNum) {
     }
 }
 
-void dayType::print() {
+void dayType::print() const {
     std::cout << "Today is " << mDay[mDayNum] << ".\n";
 }
 
-std::string dayType::today() {
+std::string dayType::today() const {
     return mDay[mDayNum];
 }
 
-std::string dayType::tomorrow() {
+std::string dayType::tomorrow()  const {
     int n;
     if (mDayNum + 1 > 6) {
         n = 0;
@@ -37,7 +37,7 @@ std::string dayType::tomorrow() {
     return mDay[n];
 }
 
-std::string dayType::yesterday() {
+std::string dayType::yesterday()  const {
     int n;
     if (mDayNum -1 < 0) {
         n = 7;

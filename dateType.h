@@ -1,3 +1,14 @@
+/*******************************
+ * dateType.h
+ *
+ * Definition for dateType class
+ *
+ * Josh Tozer
+ * 2/15/2019
+ * Clements/CSC161
+*******************************/
+#ifndef H_dateType
+#define H_dateType
 
 class dateType {
 private:
@@ -22,6 +33,7 @@ public:
     // Function to print the date
     int print() const;
     void testLeapYear();
+    void printMonthYear();
 
 
     // Default constructor to set the date according to the parameters
@@ -52,3 +64,5 @@ public:
     }
 
 };
+
+#endif

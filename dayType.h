@@ -23,10 +23,10 @@ private:
     int mDayNum;
 public:
     void setDayNum(int dayNum);
-    void print();
-    std::string today();
-    std::string tomorrow();
-    std::string yesterday();
+    void print() const;
+    std::string today() const;
+    std::string tomorrow() const;
+    std::string yesterday() const;
     std::string timeTravel(int daysTravelled);
 
     dayType() {

@@ -1,4 +1,12 @@
-#include <iostream>
+/*******************************
+ * dateType.cpp
+ *
+ * Implementation file for the dateType class
+ *
+ * Josh Tozer
+ * 2/15/2019
+ * Clements/CSC161
+*******************************/#include <iostream>
 #include "dateType.h"
 
 void dateType::setDate(int month, int day, int year) {

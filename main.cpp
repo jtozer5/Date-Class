@@ -1,6 +1,16 @@
+/*******************************
+ * main.cpp
+ *
+ * main file for testing
+ *
+ * Josh Tozer
+ * 2/15/2019
+ * Clements/CSC161
+*******************************/
 #include <iostream>
 #include "dayType.h"
 #include "dateType.h"
+#include "extDateType.h"
 
 int main() {
     // Testing the day class
